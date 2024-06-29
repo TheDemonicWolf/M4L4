@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка формы</title>
+    <style>
+        body {margin: 0;
+  padding: 0 3%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  background: linear-gradient(180deg, #2a8147 0%, rgba(57, 38, 87, 0.8) 100%);
+  color: #000000;
+}
+    </style>
+</head>
+<body>
+    {% block content %}
+    <h1>Спасибо за заполнение формы!</h1>
+    <p>Ваша электронная почта: {{ email }}</p>
+        <img class="item__img" src="../static/img/developer.png" alt="battery">
+    </p>
+    {% endblock %}
+</body>
+</html>
